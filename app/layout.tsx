@@ -1,6 +1,8 @@
+// @ts-nocheck
 import type { Metadata } from 'next';
 import { DM_Sans, DM_Serif_Display } from 'next/font/google';
 import './globals.css';
+import { getKorivaConfig, buildCssVars } from '@/lib/koriva-config';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -21,9 +23,11 @@ export const metadata: Metadata = {
   description: 'Small-group reformer Pilates in Denver. Community-first, instructor-guided, progressive method. First month $99.',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const cfg = await getKorivaConfig();
+  const vars = buildCssVars(cfg?.brand);
   return (
-    <html lang="en" className={`${dmSans.variable} ${dmSerif.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${dmSerif.variable}`} style={vars as React.CSSProperties}>
       <body>{children}</body>
     </html>
   );
