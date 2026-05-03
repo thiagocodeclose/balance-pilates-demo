@@ -402,12 +402,12 @@ export default function BalancePage() {
             <h1 data-cg-el="hero_headline_1" className="bl-hero-title">
               Everyone&apos;s<br /><em>Pilates.</em>
             </h1>
-            <p className="bl-hero-sub">
+            <p data-cg-el="hero_subtitle" className="bl-hero-sub">
               Small groups. Expert instructors. A method that meets you exactly where you are — and takes you further than you expected. All levels, all bodies, all welcome.
             </p>
             <div className="bl-hero-actions">
-              <a href="#pricing" className="bl-btn-primary">Start for $99</a>
-              <a href="#classes" className="bl-btn-ghost">View Schedule</a>
+              <a data-cg-el="hero_cta_primary" href="#pricing" className="bl-btn-primary">Start for $99</a>
+              <a data-cg-el="hero_cta_secondary" href="#classes" className="bl-btn-ghost">View Schedule</a>
             </div>
           </div>
 
