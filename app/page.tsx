@@ -399,7 +399,7 @@ export default function BalancePage() {
         <div className="bl-hero-inner">
           <div className="bl-hero-copy">
             <div className="bl-hero-tag">🌿 Community Reformer Pilates</div>
-            <h1 className="bl-hero-title">
+            <h1 data-cg-el="hero_headline_1" className="bl-hero-title">
               Everyone&apos;s<br /><em>Pilates.</em>
             </h1>
             <p className="bl-hero-sub">
