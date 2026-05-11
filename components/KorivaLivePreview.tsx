@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 declare global {
   interface Window {
     __KORIVA_ANIM_OBSERVER__?: IntersectionObserver;
+    __KORIVA_REGISTRY__?: Map<string, { meta?: { section?: string; label?: string; type?: string }; defaults?: Record<string, unknown> }>;
   }
 }
 
