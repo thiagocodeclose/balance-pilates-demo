@@ -560,7 +560,7 @@ export default function BalancePage() {
         </div>
         <div className="bl-footer-bottom">
           <span>© {new Date().getFullYear()} Balance Pilates. All rights reserved.</span>
-          <span>Powered by <a href="https://koriva.com" className="bl-footer-brand">Koriva</a></span>
+          <span>Powered by <a href="https://garrison365.com" className="bl-footer-brand">Garrison365</a></span>
         </div>
       </footer>
     </>
